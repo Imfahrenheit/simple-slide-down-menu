@@ -9,7 +9,7 @@ import "../css/App.css";
 class NavBar extends Component {
   
   state = {
-    slideDown: false,
+    slideDown:false,
     showInput: false
   };
   showExtendedMenu = () => {

@@ -3,21 +3,8 @@ import "../css/App.css";
 import Product from "../components/Product";
 
 
-const up = {
-    
-    maxHeight: "1000px",
-    transition: "0.5s ease-in",
-    overflow: 'scroll',
-    borderBottom:"1px solid black"
-}
-const down = {
-    maxHeight: "0",
 
-    transition: "0.5s ease",
-    overflow: 'scoll',
-    borderBottom: "1px solid black"
 
-}
 const slide1 = {
   transform: "translateX(0)",
   transition: "0.5s ease-in-out"
@@ -35,9 +22,13 @@ const SlideDown = props => {
 
 
   return (
-      <div style={props.slideDown?up:down}>
+
+    // {condistional jsx rendered here }
+      <div className={props.slideDown?"up":"down"}>
           <div 
       className="section1">
+      
+       {/*condistional styling added here  here */}
         <div style={!props.showInput? slide1 : slide2} className="slideDown">
         {!props.showInput ? (<div style={{width:"70%"}} > 
             <div className="flexIcons">

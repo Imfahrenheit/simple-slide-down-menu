@@ -11,15 +11,28 @@ import '../css/App.css'
                     <div>
               <img src={require("../assets/wifi.svg")} alt="" /> <span>Netti kotin</span></div>
                     <div>
-              <img src={require("../assets/liiga.png")} alt="" /> <span> Liiga</span> </div>
+              <img src={require("../assets/liiga.png")} alt="" /> <span> Liiga</span> <br />
+              <small style={{
+                  float: "left"
+                 
+              }}> Telia on Liigan uusi koti <br />
+                  Ennakkotilaa ja hyödynna edut.</small></div>
                     <div>
               <img src={require("../assets/video-player.svg")} alt="" />  <span>Tv ja vihde</span></div>
                     <div>
-              <img src={require("../assets/dots-menu.svg")} alt="" /> <span>Palvelut</span>    </div>
+              <img style={{height:"50px"}} src={require("../assets/dots-menu.svg")} alt="" /> <span>Palvelut</span>    </div>
                     <div>
-              <img src={require("../assets/shopping-bag.svg")} alt="" /> <span>Tarjokset</span> </div>
+              <img src={require("../assets/shopping-bag.svg")} alt="" /> <span>Tarjokset</span> 
+              </div>
                     <div>
-              <img src={require("../assets/airplane.svg")} alt="" /> <span>Puhelin <br/>Ulkomailla</span> </div>
+              <img src={require("../assets/airplane.svg")} alt="" /> <span>Puhelin <br />Ulkomailla</span> <br /> <small style={{
+                  
+                 
+                
+                 
+              }} > Meillä EU-käyttö kuuluu <br /> liittymän kuukausimaksuun</small> 
+             
+              </div>
     </div>
   )
 }

@@ -1,20 +1,23 @@
 /* main  color scheme  rgb(152, 36, 224) 
 on hover #CA27FB */
 .App{
-  height: 100vh;
+  height:auto;
 }
+
+/* nav bar styles start from here */
+
 .logo{
   width: 10%;
   margin-left: 5%;
 }
   
 .logo img{
-  width: 100%;
+  max-width: 100%;
   max-height:100%;
 }
 .navMenu{
   color:  rgb(152, 36, 224);
-  width: 30%;
+  width: 40%;
   display:flex;
   justify-content: space-evenly;
   font-family: Helvetica;
@@ -44,38 +47,41 @@ font-size: 25px;
 
 }
 .nav-container{
-  
+  height: 78px;
   display:flex;
-  border-bottom: .5px solid rgb(150, 147, 147)
+  
   
 }
 .nav-container div:last-child {
   margin-left: auto;
 }
 .fa-shopping-cart{
-  margin:24px 50px 0 0;
+  margin:22px 80px 0 0;
  
 }
+
+/* section after nav-bar styles start from here */
 .slideDown{
-  padding-top: 3%;
+ 
   width: 95%;
   
-  height: auto;
+  height:104px;
 }
 .slideDown div{
+
+/* important for transition*/
 display: inline-block;
-
-
 }
 .flexIcons{
-  
-  padding-left: 5%;
+ 
+  margin:40px 0 0 6%;
   width: 70%;
 }
 
 .flexIcons div{
-  display: inline-block;
-  margin: 20px;
+  height:100%; 
+  margin-right: 45px;
+ 
 }
 .flexIcons div:hover{
   color: #CA27FB;
@@ -84,14 +90,14 @@ display: inline-block;
 
 .icontText{
   color: grey;
-  margin-left: 15px;
+  margin-left: 14px;
   font-size: 20px;
 }
 .input-container{
   
   float: right;
-  margin-right: 12%;
-  margin-top:10px; 
+  margin:40px 12% 0 0;
+  
 }
 .input-container:hover{
 color:#CA27FB;
@@ -112,8 +118,9 @@ outline:none;
   border-bottom: 1px solid rgb(152, 36, 224);
 }
 .crossButton{
+  color:rgb(197, 194, 194); 
   float: right;
- margin: 3% 3% 0 0;
+ margin: 2% 3% 0 0;
  font-weight: bold;
  font-size: 26px;
 }
@@ -122,13 +129,17 @@ outline:none;
   cursor: pointer; 
 }
 .section1{
-  height:150px; 
+  max-height:150px; 
+  box-sizing:border-box; 
 display:flex;
 background:rgb(242, 242, 242);
 box-sizing:border-box ;
 border-bottom: 0.5px solid rgb(216, 214, 214);
 border-top: 0.5px solid rgb(216, 214, 214);
 }
+
+/* product section style start from here styles start from here */
+
 .product-container{
   margin-top:3%; 
 margin-bottom:20px;
@@ -141,19 +152,74 @@ margin-bottom:20px;
 .product-container div >img{
   
   margin-left:17%;
-  margin-right:5%;  
-  width: 20%;
-  height:60%;
+  margin-right:3%;  
+  width: 60px;
+ 
   float: left;
 }
-.product-container div:hover{
+.product-container div> span:hover{
   color:#CA27FB;
   cursor: pointer;
 }
-.product-container div{
+.product-container div>span{
+
   font-size: 22px;
 
   
 
 
+}
+
+/* transition style start from here */
+
+.up{
+    max-height: 1000px;
+    transition: 0.5s ease-in;
+    overflow: scroll;
+    border-bottom:0.5px solid rgb(180, 176, 176);
+}
+.down{
+ max-height: 0;
+
+    transition: 0.5s ease;
+    overflow: scroll;
+    border-bottom: .5px solid rgb(204, 197, 197);
+    
+}
+small{
+  float:left;
+  color: rgb(122, 116, 116);
+}
+@media screen and (max-width:1080px){
+.navItem h3{
+  display:none;
+}
+.navItem{
+margin-top:15px;
+width: 40%;
+  
+}
+.fa-shopping-cart{
+      margin:0 78px 15px 0;
+}
+.input-container{
+      margin-right: -5%
+}
+.flexIcons{
+  width: 100%;
+  font-size: 18px;
+}
+.product-container{
+  margin-top:3%; 
+  margin-bottom:20px;
+  grid-template-columns: 1fr 1fr 1fr ;
+  
+}
+.product-container div>span{
+  margin-top:18%;
+  font-size: 18px;
+}
+small{
+  display:none;
+}
 }
